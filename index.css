@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inicio {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    height: 100vh;
+    display: flex;
+}
+
+.navbar {
+    background-color: white;
+    width: 90px;
+    height: 100%;
+    transition: width .1s;
+    position: fixed;
+}
+
+.navbar-contenedor-cerrado {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    color: black;
+    font-size: 1.7rem;
+} 
+
+
+/* NAVBAR ABIERTO */
+.dpnone {
+    display: none;
+}
+
+.navbar-abierto {
+    width: 300px;
+    transition: width .3s;
+}
+
+.navbar-contenedor-abierto {
+    height: 100%;
+    padding: 20px;
+}
+
+.navbar-contenedor-cerrado-logo {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-contenedor-cerrado-enlaces {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navbar-contenedor-cerrado-enlaces a {
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar-contenedor-cerrado-enlaces a:hover {
+    background-color: rgba(151, 151, 151, 0.308);
+}
+
+.navbar-contenedor-cerrado-redes {
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ESTILOS PARA LOS TEXTOS DE LAS DIFERENTES SECCIONES */
+.seccion {
+    height: 100vh;
+    display: flex;
+}
+
+.seccion-textos {
+    align-self: center;
+    height: 200px;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 200px;
+}
+
+.blog {
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.portafolio {
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+.contacto {
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
