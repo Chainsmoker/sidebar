@@ -113,3 +113,11 @@ i {
 .contacto {
     background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
 }
+
+@media (max-width: 820px){
+    .seccion-textos {
+        font-size: 2rem;
+        width: 30%;
+    }
+    
+}
